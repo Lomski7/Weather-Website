@@ -1,0 +1,56 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Arial', sans-serif; 
+  margin: 0;
+  padding: 0;
+  
+}
+
+.weather-card {
+  background-color: #f0f0f0a6;
+  border-radius: 8px;
+  padding: 20px;
+  margin-top: 24px;
+  text-align: center;
+  opacity: 0;
+  transform: translateY(-20px);
+  transition: opacity 0.5s ease, transform 0.5s ease;
+}
+
+.weather-card.styled {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.weather-card.hidden {
+  display: none;
+}
+
+
+.Btn {
+  cursor: pointer;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 24px;
+  transition: background-color 0.5s;
+  margin-top: 100px;
+}
+
+.Btn:hover {
+  background-color: #217dbb;
+}
+
+.Description,
+.Temperature,
+.FeelsLike,
+.WindSpeed {
+  text-align: center;
+  font-size: 25px;
+  margin-top: 50px;
+  
+}
